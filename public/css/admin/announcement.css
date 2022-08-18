@@ -1,0 +1,173 @@
+
+.space{
+    opacity: 1%;
+}
+.cont2{
+  display:none;
+}
+.edit-announcement{
+ 
+  margin-top: 3%;
+  background-color: white;
+	padding: 20px;
+	margin-left: 18.5%;
+	width: 80%;
+}
+.announcements::-webkit-scrollbar {
+        display: none;
+      }
+.announcements{
+    -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    overflow: auto;
+    height: 450px;
+    margin-top: 2%;
+   margin-left: 5%;
+   
+    width: 90%;
+    
+  
+    
+}
+.create-announcement{
+ 
+	background-color: white;
+	padding: 20px;
+	margin-left: 18.5%;
+	width: 80%;
+}
+
+
+/* Zebra striping */
+/* tr:nth-of-type(odd) { 
+	background: rgb(209, 196, 196); 
+	} */
+
+.announcements th{
+    background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+	
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	font-size: 18px;
+}
+    .announcements td { 
+	background: rgb(236, 234, 234); 
+	text-align: center;
+	padding: 20px; 
+	border: 1px solid #ccc;  
+	font-size: 18px;
+	}
+/* CSS */
+.button-29 {
+  margin-top: 2%;
+  margin-left: 250px;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+@media (max-width: 576px) {
+  .button-29{
+    margin: 30px auto;
+  }
+}
+@media 
+only screen and (max-width: 1250px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    
+    .button-29{
+        margin: 30px auto;
+      }
+    .announcements{
+       
+		overflow-y: auto;
+        
+        
+        margin-left: -1px;
+	}
+	.announcements table { 
+	
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	.announcements table, thead, tbody, th, td, tr { 
+        text-align: left;
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.announcements thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	.announcements tr { border: 1px solid #ccc; }
+	
+	.announcements td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	.announcements td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
